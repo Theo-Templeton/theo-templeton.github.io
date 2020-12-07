@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.card {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card > img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.imageBrowser > img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.gridOfSquares {
+    position: absolute;
+    top: 5em;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 22em;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gridOfSquares > div {
+    background: black;
+    width: 5%;
+}
+  
+.gridOfSquares > div::before {
+    content: "";
+    display: block;
+}
+
+#wrapper {
+    min-height: 100%;
+}
+
+.linksContainer {
+    z-index: 1;
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container {
+    margin: 10px;
+    border: 5px solid black;
+}
+
+.linkBox {
+    display: block;
+    width: 100px;
+    margin: 5px;
+    background-color: black;
+    width: 20em;
+    line-height: 75px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+#navBar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    display: block;
+    background-color: black;
+}
+
+.navIcon {
+    height: 4em;
+    width: 4em;
+    border-style: solid;
+    border-width: .5em;
+    display: block;
+}
