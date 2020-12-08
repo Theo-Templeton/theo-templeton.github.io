@@ -17,9 +17,10 @@ html, body {
     width: 100%;
 }
 
-.imageBrowser > img {
+.image-gallery-slide {
     object-fit: contain;
-    width: 100%;
+    object-position: center;
+    height: 32em;
 }
 
 .gridOfSquares {
